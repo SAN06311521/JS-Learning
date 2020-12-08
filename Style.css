@@ -1,0 +1,158 @@
+body
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+main
+{
+    margin: 0;
+}
+#amazon-logo
+{
+    width: 500px;
+    height: 100px;
+    margin-left: 30%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+nav
+{
+    background-color: rgb(7, 77, 180);
+
+}
+aside
+{
+    display: inline-block;
+    height: 200px;
+    width: 45%;
+}
+section
+{
+    display: inline-block;
+    height: 200px;
+    width: 49%;
+}
+#watch-img
+{
+    height: 400px;
+    width: 400px;
+    margin-left: 150px;
+    position: relative;
+    top: 50;
+    z-index: 1;
+}
+#colors
+{
+    display: flex;
+    
+}
+#red ,#black ,#blue,#pink,#purple
+{
+    width: 40px;
+    height: 40px;
+   border-radius: 8px;
+    margin-right: 13px;
+   border: none;
+}
+#red
+{
+    background-color: #ca3d22;
+}
+#black
+{
+    background-color: #23211f;
+}
+#blue
+{
+    background-color: #565681;
+}
+#pink
+{
+    background-color: #e9c7be;
+}
+#purple
+{
+    background-color: #8a5362;
+}
+#Features
+{
+    display: flex;
+}
+.btn
+{
+    background-color: grey;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#button
+{
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    height: 60px;
+    margin-top: 30px;
+}
+#text
+{
+    position: relative;
+    top: 275;
+    left: 345;
+    z-index: 1;
+    /* display: none;
+    position: absolute;
+    font-size: 30px; */
+    /* top: 330px;
+    left: 17.5vw;*/
+    transform: translateX(-50%); 
+    
+    z-index: 200;
+    text-align: center;
+    color: white;
+}
+#heart
+{
+    width: 40px;
+    height: 40px;
+    /* display: none; */
+    position: relative;
+    top: 320;
+    left: 320;
+    /* z-index: 200; */
+    
+}
+.animation
+{
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes beat
+{
+    0%
+    {
+        transform: scale(1.5,1.5);
+    }
+    50%
+    {
+        transform: scale(1.75,1.75);
+    }
+    50%
+    {
+        transform: scale(2,2);
+    }
+    50%
+    {
+        transform: scale(2.25,2.25);
+    }
+    100%
+    {
+        transform: scale(2.5,2.5);
+    }
+}
